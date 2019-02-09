@@ -1,0 +1,21 @@
+service: kotlin-native-sample-csvparser
+
+provider:
+  name: aws
+  runtime: provided
+  region: us-east-2
+
+package:
+  include:
+    - European_Mammals_Red_List_Nov_2009.csv
+
+functions:
+  csvparser:
+    handler: main.kexe
+    layers:
+      - arn:aws:lambda:us-east-2:856841379672:layer:kotlin-native-runtime:1
+    memorySize: 256
+    events:
+      - http:
+          path: /parse
+          method: post
