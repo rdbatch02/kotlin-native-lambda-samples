@@ -6,6 +6,8 @@ from EU is being used.
 
 This sample is modified from [JetBrain's CSVParser](https://github.com/JetBrains/kotlin-native/tree/master/samples/csvparser) example.
 
+This example shows how to use [Serverless Framework](https://serverless.com) with a Kotlin/Native codebase.
+
 ## Simple Usage
 1. Install [Serverless Framework](https://serverless.com/framework/docs/getting-started/)
 2. `$ cd serverless`
