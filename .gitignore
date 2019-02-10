@@ -60,3 +60,4 @@ samples/androidNativeActivity/Polyhedron
 *.jar
 
 /lambda
+/.serverless
